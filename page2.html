@@ -4,44 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volleyball and Hawaii - Page 2</title>
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<section id="main-content">
-    <p>This is the main content section.</p>
-</section>
-
-<footer id="site-footer">
-    <p>Copyright © 2025 Tyler</p>
-</footer>
-
 <body>
   <header>
     <h1>More About Me</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#facts">Quick Facts</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <p>
-      I grew up in Hawaii, where volleyball is a big part of the culture. 
-      Playing the sport has taught me discipline, teamwork, and perseverance. 
-      It has also given me some of my closest friendships.
-    </p>
+  <main id="main-content">
+    <section aria-labelledby="about-volleyball">
+      <h2 id="about-volleyball">My Volleyball Journey</h2>
+      <p>
+        I grew up in Hawaii, where volleyball is a big part of the culture. 
+        Playing the sport has taught me discipline, teamwork, and perseverance. 
+        It has also given me some of my closest friendships.
+      </p>
+    </section>
 
-    <p>
-      Hawaii’s beaches and volleyball courts shaped a lot of my life. 
-      The balance between school, practice, and games has helped me grow 
-      not just as an athlete but as a person.
-    </p>
+    <section aria-labelledby="hawaii-life">
+      <h2 id="hawaii-life">Life in Hawaii</h2>
+      <p>
+        Hawaii’s beaches and volleyball courts shaped a lot of my life. 
+        The balance between school, practice, and games has helped me grow 
+        not just as an athlete but as a person.
+      </p>
+    </section>
 
-    <h2>Quick Facts</h2>
-    <ul>
-      <li>I play as an outside hitter or opposite hitter.</li>
-      <li>One of my goals is to help my college win our conference.</li>
-      <li>Volleyball has given me lifelong friends, both in Hawaii and in college.</li>
-    </ul>
+    <section id="facts" aria-labelledby="quick-facts">
+      <h2 id="quick-facts">Quick Facts</h2>
+      <ul>
+        <li>I play as an outside hitter or opposite hitter.</li>
+        <li>One of my goals is to help my college win our conference.</li>
+        <li>Volleyball has given me lifelong friends, both in Hawaii and in college.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="photo-section">
+      <h2 id="photo-section">Hawaii Inspiration</h2>
+      <img src="images/hawaii.jpg" alt="A scenic Hawaii beach with palm trees and blue ocean" width="400">
+      <p>Hawaii is where my love for volleyball began — it’s a place full of energy and community.</p>
+    </section>
   </main>
 
-  <footer>
+  <footer id="site-footer">
     <p><a href="index.html">⬅ Back to Home</a></p>
+    <p>Copyright © 2025 Tyler</p>
   </footer>
 </body>
 </html>

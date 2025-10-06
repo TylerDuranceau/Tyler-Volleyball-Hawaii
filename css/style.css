@@ -3,51 +3,118 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333333;
+    line-height: 1.6;
 }
 
+/* Headings */
 h1, h2, h3 {
     text-align: center;
-    color: #333333;
+    color: #222222; /* darker for better contrast */
 }
 
+/* Paragraphs */
 p {
     font-size: 16px;
-    line-height: 1.5;
-    color: #555555;
+    color: #444444; /* improved contrast */
 }
+
+/* Highlighted and Section Titles */
 .section-title {
-    color: #0077cc;
+    color: #005fa3; /* accessible blue */
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .highlight-text {
-    background-color: #ffffcc;
+    background-color: #fff6a3; /* slightly darker yellow for better contrast */
     padding: 5px;
 }
 
-
-#main-content {
-    padding: 20px;
-    background-color: #e0e0e0;
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    background-color: #e6f0ff;
 }
 
-#site-footer {
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #005fa3;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+    outline: 2px solid #005fa3; /* focus visible for keyboard users */
+    outline-offset: 2px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Flexbox Sections */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* ensures it works on mobile */
+    margin: 20px;
+}
+
+.flex-item {
+    flex: 1;
+    padding: 15px;
+    background-color: #cceeff;
+    border-radius: 8px;
+    min-width: 250px; /* helps on smaller screens */
+}
+
+/* Footer */
+footer {
     text-align: center;
     padding: 15px;
     background-color: #333333;
     color: white;
 }
-.flex-container {
-    display: flex;          /* enables Flexbox */
-    gap: 20px;              /* space between items */
-    justify-content: center; /* center horizontally */
-    margin: 20px;
+
+/* Links in Footer */
+footer a {
+    color: #aad4ff;
+    text-decoration: none;
 }
 
-.flex-item {
-    flex: 1;                /* each item takes equal space */
-    padding: 15px;
-    background-color: #cceeff;
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+    outline: 2px solid #aad4ff;
+    outline-offset: 2px;
+}
+
+/* Accessibility: Ensure images resize properly */
+img {
+    max-width: 100%;
+    height: auto;
     border-radius: 5px;
+}
+
+/* Add visible focus styles for all interactive elements */
+a, button, input, textarea {
+    outline-color: #005fa3;
+    outline-width: 2px;
+    outline-style: solid;
+}
+
+a:focus, button:focus, input:focus, textarea:focus {
+    outline-offset: 3px;
 }

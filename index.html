@@ -4,25 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tyler's Volleyball and Hawaii Page</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header>
-    <h1>Welcome to My Page</h1>
-    <link rel="stylesheet" href="css/style.css">
+    <h1>Welcome to Tyler's Volleyball and Hawaii Page</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Go to Page 2 ➡</a></li>
+      </ul>
+    </nav>
   </header>
-<h2 class="section-title">About Me</h2>
-<p class="highlight-text">I enjoy volleyball and coding in Python.</p>
+
   <main>
-    <section>
-      <h2>About Me</h2>
+    <section aria-labelledby="about-me">
+      <h2 id="about-me">About Me</h2>
       <p>
         Hi, my name is Tyler. I’m originally from Hawaii, and volleyball has 
         been a big part of my life. Both Hawaii and volleyball shaped who I am today. 
+        I also enjoy coding in Python and learning about technology.
       </p>
     </section>
 
-    <section>
-      <h2>Things I Enjoy</h2>
+    <section aria-labelledby="things-enjoy">
+      <h2 id="things-enjoy">Things I Enjoy</h2>
       <ul>
         <li>Playing volleyball with my teammates</li>
         <li>Spending time at the beach in Hawaii</li>
@@ -30,8 +37,8 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Steps I Take Before a Game</h2>
+    <section aria-labelledby="pre-game">
+      <h2 id="pre-game">Steps I Take Before a Game</h2>
       <ol>
         <li>Stretch and warm up</li>
         <li>Focus on my mindset</li>
@@ -39,23 +46,27 @@
       </ol>
     </section>
 
-    <section>
-      <h2>My Home</h2>
-      <img src="images/hawaii.jpg" alt="Beautiful Hawaii beach" width="300">
+    <section aria-labelledby="my-home">
+      <h2 id="my-home">My Home</h2>
+      <img src="images/hawaii.jpg" alt="A scenic beach in Hawaii with palm trees and clear blue water" width="300">
+    </section>
+
+    <section class="flex-container" aria-labelledby="extra-sections">
+      <h2 id="extra-sections">More Content</h2>
+      <div class="flex-item">
+        <h3>Left Section</h3>
+        <p>Some content for the left side, including more about my volleyball experiences.</p>
+      </div>
+      <div class="flex-item">
+        <h3>Right Section</h3>
+        <p>Some content for the right side, such as fun facts about Hawaii.</p>
+      </div>
     </section>
   </main>
-<div class="flex-container">
-    <div class="flex-item">
-        <h3>Left Section</h3>
-        <p>Some content for the left side.</p>
-    </div>
-    <div class="flex-item">
-        <h3>Right Section</h3>
-        <p>Some content for the right side.</p>
-    </div>
-</div>
+
   <footer>
-    <p><a href="page2.html">Go to Page 2 ➡</a></p>
+    <p>© 2025 Tyler's Volleyball and Hawaii Page</p>
+    <p><a href="page2.html">Learn more about Hawaii and Volleyball</a></p>
   </footer>
 </body>
 </html>
